@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "natural";
+    src: url("naturalVF.ttf") format("truetype");
+}
+
+body {
+    background-color: #381426;
+    font-family: "natural";
+    font-size: 100px;
+    color: #7B81FF;
+}
+
+.nav {
+    font-size: 24px;
+    display: flex;
+    padding: 30px;
+    margin: 30px;
+    gap: 200px;
+    justify-content: center;
+
+}
+
+.introduction {
+    display: flex;
+    padding: 30px;
+    margin: 30px;
+    flex-direction: column; 
+    text-align: center;
+    margin-top: 200px;
+    gap: 300px;
+}
+
+
+.titles h1 {
+    font-size: 91px;
+    font-weight: normal;
+    font-variation-settings: "WHAT" 0;
+
+    animation-name: move;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes move {
+	0% {
+		font-variation-settings: "WHAT" 0;
+	}
+	100% {
+		font-variation-settings: "WHAT" 100;
+	}
+}
+
+@keyframes movelightyellow {
+	0% {
+		font-variation-settings: "WHAT" 0;
+	}
+	100% {
+		font-variation-settings: "WHAT" 100;
+        color: #FFF3AF;
+	}
+}
+
+@keyframes movelightgreen {
+	0% {
+		font-variation-settings: "WHAT" 0;
+	}
+	100% {
+		font-variation-settings: "WHAT" 100;
+        color: #7BFF81;
+	}
+}
+
+.titles h2 {
+    font-size: 36px;
+}
+
+.intro p {
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 30px;
+    margin: 30px;
+}
+
+.whatisfriction h1 {
+    font-size: 64px;
+    font-weight: normal; 
+
+    animation-name: move;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+.whatisfriction p {
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 30px;
+    margin: 30px;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 90px;
+    row-gap: 90px;
+    padding: 50px;
+    margin: 60px;
+    margin-top: 200px;
+}
+
+.middle .number {
+    font-size: 400px;
+    align-self: center;
+    animation-name: move;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+    font-synthesis: none;
+}
+
+.section h1 {
+    font-size: 50px;
+    font-weight: normal;
+
+    animation-name: move-interaction;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+.move-interaction {
+	font-variation-settings: "WHAT" 0;
+	transition: 1s;
+    cursor: pointer;
+}
+
+.move-interaction:hover {
+     font-variation-settings: "WHAT" 100;
+}
+
+.section p {
+     font-size: 36px;
+     margin-top: 40px;
+}
+
+.highlightgreen {
+    animation-name: movelightgreen;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+    font-synthesis: none;
+}
+
+.highlightyellow {
+    animation-name: movelightyellow;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+    font-synthesis: none;
+}
+
+.highlightyellow-interaction {
+	font-variation-settings: "WHAT" 0;
+	transition: 1s;
+    cursor: pointer;
+}
+
+.highlightyellow-interaction:hover {
+     font-variation-settings: "WHAT" 100;
+     color: #FFF3AF;
+}
+
+.highlightgreen-interaction {
+	font-variation-settings: "WHAT" 0;
+	transition: 1s;
+    cursor: pointer;
+}
+
+.highlightgreen-interaction:hover {
+     font-variation-settings: "WHAT" 100;
+     color: #7BFF81;
+}
+
+.grid {
+    margin-top: -150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.options h1 {
+    font-size: 36px;
+}
+
+.options img {
+    width: 70%;
+}
+
+.discomfort {
+    background-color: #7B81FF;
+    color: #381426;
+    font-size:36px;
+
+    animation-name: coloranimation;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+.discomfortgrid {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.discomfortgrid img {
+    width:30%;
+}
+
+@keyframes coloranimation {
+    0% {
+        background-color: #381426;
+    }
+    100% {
+        background-color: #7B81FF;
+    }
+}
+
+.time-delay {
+    background-color: #7B81FF;
+    color: #381426;
+    font-size:36px;
+}
+
+.time-delay-grid {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+
+    animation-name: move;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+.time-delay-grid img {
+    width:30%;
+}
+
+.engage-the-body {
+    background-color: #7B81FF;
+    color: #381426;
+    font-size:36px;
+}
+
+.engage-the-body-grid {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.engage-the-body-grid img {
+    width:30%;
+}
+
+.vertical-yellow {
+	font-variation-settings: "WHAT" 0;
+	transition: 1s;
+    cursor: pointer;
+}
+
+.vertical-yellow:hover {
+     font-variation-settings: "WHAT" 100;
+     color: #FFF3AF;
+     font-size: 100px;
+}
+
+.vertical-green {
+	font-variation-settings: "WHAT" 0;
+	transition: 1s;
+    cursor: pointer;
+}
+
+.vertical-green:hover {
+     font-variation-settings: "WHAT" 100;
+     color: #7BFF81;
+     font-size: 100px;
+}
+
+.non-positive {
+    background-color: #7B81FF;
+    color: #381426;
+    font-size:36px;
+}
+
+.non-positive-grid {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+
+    animation-name: ghostanimation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+.non-positive-grid img {
+    width:30%;
+}
+
+.stillyellow {
+    color:#381426;
+}
+
+.stillyellow:hover {
+    color:#FFF3AF;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.stillgreen {
+    color:#381426;
+}
+
+.stillgreen:hover {
+    color:#7BFF81;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.stillyellow:hover {
+    color:#FFF3AF;
+    transition: 1s;
+    cursor: pointer;
+}
+
+@keyframes ghostanimation {
+	0% {
+		font-variation-settings: "WHAT" 0;
+	}
+	100% {
+		font-variation-settings: "WHAT" 100;
+        color: transparent;
+	}
+}
